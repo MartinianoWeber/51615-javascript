@@ -1,0 +1,146 @@
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+font-family: 'Nunito', sans-serif;
+}
+
+.simulador{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+}
+
+.simulador__title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.simulador__formulario-cotizacion{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    gap: .5rem;
+}
+
+.simulador__formulario-cotizacion-inputs{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+
+.simulador__formulario-cotizacion-select{
+        outline: none;
+    border: none;
+     padding: .5rem;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+
+.simulador__formulario-cotizacion-button{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.simulador__result{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(54, 255, 54);
+    margin-top: 2rem;
+    border-radius: 5px;
+    gap: .5rem;
+    text-align: center;
+    color: #000000;
+}
+
+.simulador__result-actions button{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    width: 70px;
+    margin-right: 2rem;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.simulador__result-actions button:last-of-type{
+    margin-right: 0rem;
+}
+
+.disable{
+    display: none !important;
+
+}
+
+.simulador__formularioFin{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    gap: .5rem;
+
+}
+
+.simulador__formularioFin-title{
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 0rem;
+}
+
+.simulador__formularioFin-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    gap: .5rem;
+}
+
+.simulador__formularioFin-form-input{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+
+.simulador__formularioFin-form-button{
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.buttonDisable{
+    background-color: #838383;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.error{
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: .5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+}

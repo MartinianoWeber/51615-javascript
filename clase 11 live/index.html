@@ -31,9 +31,22 @@
             <button class="simulador__formulario-cotizacion-button buttonDisable" id="btnCotizar"
                 type="submit">Calcular</button>
         </form>
-        <button id="btnAnterior">
-            Ver calculos anteriores
+
+        <button id="btnCotizaciones">
+            Ver cotizaciones anteriores
         </button>
+        <button id="btnBorrarCotizacion">
+            eliminar cotizaciones anteriores
+        </button>
+        <button id="btnBorrarEspecifico">
+            eliminar cotizacion especifica
+        </button>
+
+        <div id="containerBorrar" class="disable">
+            <input type="text" id="inputBorrar">
+            <button id="btnBorrar">borrar</button>
+        </div>
+
         <section class="simulador__result disable" id="resultadoContainer">
             <div id="resultado"></div>
             <div class="simulador__result-actions ">
@@ -62,9 +75,10 @@
             </form>
         </section>
 
-        <section id="sectionCalculosAnteriores">
+        <section id="containerDeCotizaciones">
 
         </section>
+
     </main>
 
     <script src="js.js"></script>

@@ -15,10 +15,12 @@ const formulario2 = document.getElementById('formulario2')
 const documentType = document.getElementById('documentType')
 const documentNumber = document.getElementById('documentNumber')
 const error = document.querySelector('.error')
-
+const btnAnterior = document.querySelector('#btnAnterior')
+const sectionCalculosAnteriores = document.getElementById('sectionCalculosAnteriores')
 
 let validar = false
 let validar2 = false
+let cotizaciones = []
 
 form1.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -133,6 +135,9 @@ function enviarFormulario() {
         fechaVencimiento
     }
     console.log(datos)
+    cotizaciones.push(datos)
+
+    localStorage.setItem('datos', JSON.stringify(cotizaciones))
 
     alert('Su solicitud ha sido enviada con éxito, la pagina sera recargada en 2 segundos')
     setTimeout(() => {
@@ -161,4 +166,14 @@ documentNumber.addEventListener('input', () => {
     if (documentType.value != 'DNI' && documentType.value != 'Pasaporte') {
         error.classList.remove('disable')
     }
+})
+
+
+btnAnterior.addEventListener('click', () => {
+    let datos = localStorage.getItem('datos')
+    datos = JSON.parse(datos)
+    datos.forEach(dato => {
+        cotizaciones.push(dato)
+
+    })
 })

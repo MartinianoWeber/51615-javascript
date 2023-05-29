@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="simulador">
+      <h1 class="simulador__title">Simulador de préstamos</h1>
+
+      <form class="simulador__formulario-cotizacion" id="form1">
+        <label for="monto">Monto:</label>
+        <input
+          class="simulador__formulario-cotizacion-inputs"
+          type="number"
+          id="monto"
+          name="monto"
+          min="0"
+        />
+        <label for="plazo">Plazo:</label>
+        <select
+          class="simulador__formulario-cotizacion-select"
+          id="plazo"
+          name="plazo"
+        >
+          <option value="12">12 meses</option>
+          <option value="24">24 meses</option>
+          <option value="36">36 meses</option>
+        </select>
+        <label for="tasa">Tasa de interés (% anual):</label>
+        <input
+          class="simulador__formulario-cotizacion-inputs"
+          type="number"
+          id="tasa"
+          name="tasa"
+          min="0"
+          max="100"
+          step="0.01"
+        />
+        <button
+          class="simulador__formulario-cotizacion-button buttonDisable"
+          id="btnCotizar"
+          type="submit"
+        >
+          Calcular
+        </button>
+      </form>
+
+      <button id="btnCotizaciones">Ver cotizaciones anteriores</button>
+      <button id="btnBorrarCotizacion">eliminar cotizaciones anteriores</button>
+      <button id="btnBorrarEspecifico">eliminar cotizacion especifica</button>
+
+      <div id="containerBorrar" class="disable">
+        <input type="text" id="inputBorrar" />
+        <button id="btnBorrar">borrar</button>
+      </div>
+
+      <section class="simulador__result disable" id="resultadoContainer">
+        <div id="resultado"></div>
+        <div class="simulador__result-actions">
+          <p>Desea cotizar otra vez?</p>
+          <button id="bntSi">Si</button><button id="btnNo">No</button>
+        </div>
+      </section>
+
+      <section class="simulador__formularioFin disable" id="ultimoFormulario">
+        <h3 class="simulador__formularioFin-title">
+          Rellena este formulario para ver si eres elegible al credito
+        </h3>
+        <form class="simulador__formularioFin-form" id="formulario2">
+          <input
+            class="simulador__formularioFin-form-input"
+            type="text"
+            placeholder="Nombre"
+            name=""
+            id=""
+          />
+          <input
+            class="simulador__formularioFin-form-input"
+            type="text"
+            placeholder="Apellido"
+            name=""
+            id=""
+          />
+          <input
+            class="simulador__formularioFin-form-input"
+            type="text"
+            placeholder="Email"
+            name=""
+            id=""
+          />
+          <select
+            class="simulador__formularioFin-form-input"
+            name=""
+            id="documentType"
+          >
+            <option value="">Tipo de documento</option>
+            <option value="DNI">DNI</option>
+            <option value="Pasaporte">Pasaporte</option>
+          </select>
+          <input
+            class="simulador__formularioFin-form-input"
+            type="text"
+            placeholder="Numero de documento"
+            name=""
+            id="documentNumber"
+          />
+          <p class="disable error">Por favor selecciona un tipo de documento</p>
+          <input
+            class="simulador__formularioFin-form-input"
+            type="text"
+            placeholder="Telefono"
+            name=""
+            id=""
+          />
+          <button
+            class="simulador__formularioFin-form-button buttonDisable"
+            id="btnForm2"
+            type="submit"
+          >
+            Enviar datos
+          </button>
+        </form>
+      </section>
+
+      <section id="containerDeCotizaciones"></section>
+    </main>
+
+    <script src="js.js"></script>
+  </body>
+</html>
