@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.menuPrincipal {
+  display: flex;
+}
+
+.menuPrincipal__contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 300px;
+  padding: 2rem;
+  justify-content: center;
+  background-color: rgb(75, 69, 69);
+  height: 300px;
+  border-radius: 2rem;
+  margin-top: 12%;
+}
+
+.menuPrincipal__containerImg {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.menuPrincipal__containerImg-img {
+  width: 200px;
+}
+
+.menuPrincipal__containerActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.menuPrincipal__containerActions button {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.disableScreen {
+  display: none;
+}
+
+.pjSize {
+  width: 150px;
+  height: auto;
+}
+
+.dialogosPj {
+  background-color: #ffffff;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  margin: auto;
+  color: #000;
+}
+
+#pantallaUser {
+  position: relative;
+}
+
+.pokemon {
+  position: absolute;
+}
+
+#pantallaUser .pokemon:nth-child(1) {
+  top: 100px;
+  left: 100px;
+}
+
+#pantallaUser .pokemon:nth-child(2) {
+  top: 318px;
+  right: 100px;
+}
+
+#pantallaUser .pokemon:nth-child(1) img {
+  top: 0;
+  left: 0;
+}
+
+#pantallaUser .pokemon img {
+  width: 150px;
+  height: 100px;
+}

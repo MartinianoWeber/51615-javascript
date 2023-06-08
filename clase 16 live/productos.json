@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "MSI 1060Ti",
+    "precio": "213123",
+    "descripcion": "dasd",
+    "descuento": false,
+    "id": "3"
+  },
+  {
+    "nombre": "MSI 10660Ti",
+    "precio": "3213",
+    "descripcion": "dasd",
+    "descuento": false,
+    "id": "5"
+  },
+  {
+    "nombre": "MSI 1080",
+    "precio": "123213",
+    "descripcion": "dasdsa",
+    "descuento": false,
+    "id": "6"
+  }
+]
